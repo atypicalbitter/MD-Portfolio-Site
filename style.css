@@ -241,6 +241,52 @@ color: white;
     gap: 1rem;
 }
 
+#about {
+    position: relative;
+}
+
+.about-containers 
+{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-deatils-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: 11rem;
+    /* bottom: 0.5rem; */
+}
+
+.details-container {
+    padding: 5rem;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 5rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.section-container{
+    gap: 8rem;
+}
 
 
 
