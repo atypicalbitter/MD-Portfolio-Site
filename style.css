@@ -335,13 +335,13 @@ color: white;
         transform: translate(0);
     }
     25% {
-        transform: translate(-1px, 1px);
+        transform: translate(-1px, 0px);
     }
     50% {
-        transform: translate(1px, -1px);
+        transform: translate(1px, 0px);
     }
     75% {
-        transform: translate(-1px, 1px);
+        transform: translate(-1px, 0px);
     }
     100% {
         transform: translate(0);
