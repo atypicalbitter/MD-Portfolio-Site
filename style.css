@@ -39,7 +39,7 @@ nav, .nav-links{
 }
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 17vh;
 }
@@ -249,8 +249,12 @@ color: white;
 {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
     justify-content: center;
+    
+}
+
+h1 {
+    
 }
 
 .about-details-container{
@@ -274,15 +278,23 @@ color: white;
 .details-container {
     padding: 2rem;
     /* flex-wrap: wrap; */
-    border-radius: 5rem;
+    /* border-radius: 5rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border-color: rgb(163, 163, 163); */
     text-align: center;
     align-items: center;
     margin: 30px;
-    width: 50%;
-    height: 50%;
+    width: 400px;
+    height: auto;    
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); 
 }
+
+.details-container p {
+    opacity: 1;
+}
+
 
 .detail-container {
     padding: 2rem;
