@@ -1,8 +1,14 @@
+
+
 * {
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -253,9 +259,22 @@ color: white;
     
 }
 
-h1 {
-    
+.details-container {
+    padding: 2rem;
+    /* flex-wrap: wrap; */
+    /* border-radius: 5rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163); */
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    width: 400px;
+    height: auto;    
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); 
 }
+
 
 .about-details-container{
     justify-content: center;
@@ -274,21 +293,6 @@ h1 {
     position: absolute;
     right: 11rem;
     /* bottom: 0.5rem; */
-}
-.details-container {
-    padding: 2rem;
-    /* flex-wrap: wrap; */
-    /* border-radius: 5rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163); */
-    text-align: center;
-    align-items: center;
-    margin: 30px;
-    width: 400px;
-    height: auto;    
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 4rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); 
 }
 
 .details-container p {
@@ -360,9 +364,9 @@ h1 {
     }
 }
 
-.carousel-slide:hover {
-    transition: 0.6s ease-in-out;
-        animation: glitch 0.5s;
+.carousel-slide:hover, .color-container:hover{
+    transition: 0.2s ease-in-out;
+        animation: glitch 0.4s;
     };
 
 
