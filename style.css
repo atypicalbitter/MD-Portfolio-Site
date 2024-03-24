@@ -6,9 +6,6 @@
     font-family: "IBM Plex Sans", sans-serif;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -45,9 +42,22 @@ nav, .nav-links{
 }
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     height: 17vh;
+    padding-right: 30px;
+}
+
+#desktop-nav{
+display: flex;
+justify-content: space-between;
+}
+
+#desktop-nav .logo {
+    font-size: 30px;
+    display: flex;
+    padding-left: 30px;
+
 }
 
 .nav-links {
@@ -169,7 +179,7 @@ section {
 }
 
 .section-pic-container img {
-    border-radius: 200px;
+    border-radius: 100px;
 }
 
 .section-text {
@@ -196,7 +206,24 @@ p.section-text p2 {
 .title {
     font-size: 3rem;
     text-align: center;
+    
 }
+
+.nametitle {
+    font-size: 5rem;
+    text-align: center;
+    overflow: hidden; /* Ensure the text doesn't overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: .15em solid blueviolet; 
+    animation: typing 1.5s steps(40) forwards; /* Animation */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+    
+}
+
 
 .socials-container {
     display: flex;
