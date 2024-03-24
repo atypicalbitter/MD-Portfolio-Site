@@ -27,7 +27,7 @@ a, .btn {
     transition: all 300ms ease;
 }
 
-#video-background {
+/* #video-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@ a, .btn {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
+} */
 ----------------------------------------------------------/* NAV */
 nav, .nav-links{
     display: flex;
@@ -70,20 +70,36 @@ a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
+    letter-spacing: 0.5px; /* Initial letter spacing */
+    transition: letter-spacing 0.3s ease;
 }
 
 a:hover {
     color: grey;
     text-decoration: underline;
     text-decoration-color: blueviolet;
+    letter-spacing: 2px;
 }
 
-.logo {
+/* .logo {
     font-size: 4em;
+    color: black;
 }
 
 .logo:hover{
-    cursor: default;
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+} */
+
+.logo {
+    font-size: 4em;
+    letter-spacing: 0.5px; /* Initial letter spacing */
+    transition: letter-spacing 0.3s ease; /* Transition for smooth effect */
+}
+
+.logo:hover {
+    letter-spacing: 2px; /* Increased letter spacing on hover */
 }
 ----------------------------------------------------------/* HAMBURGER */
 #hamburger-nav{
@@ -171,6 +187,30 @@ section {
     height: 60vh;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Gap between columns */
+    padding: 20px; 
+    justify-content: center;
+    align-items: center;}
+
+    .aboutTitle {
+        font-size: 200px;
+        grid-column: 1 / span 1; /* Title takes up first column */
+        font-weight: 300;
+        padding-left: 40px;
+
+    }
+    
+    .paragraph {
+        grid-column: 2 / span 1; /* Paragraph takes up second column */
+    }
+    
+    .paragraph p {
+        margin-top: 0; /* Remove top margin for first paragraph */
+    }
+
 .section-pic-container{
     display: flex;
     height: 400px;
@@ -178,10 +218,25 @@ section {
     margin: auto 0;
 }
 
-.section-pic-container img {
-    border-radius: 100px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+/* .section-pic-container img {
+    border-radius: 1500px;
+    box-shadow: 0 4px 6px rgba(125, 125, 125, 0.4); 
+} */
+
+.section-pic-container {
+    perspective: 1000px; /* Add perspective for 3D effect */
 }
+
+.section-pic-container img {
+    border-radius: 1500px;
+    box-shadow: 0 4px 6px rgba(125, 125, 125, 0.4); 
+    animation: flip 4s;
+    animation-delay: 1;
+}
+
+
+
+
 
 .section-text {
     align-self: center;
