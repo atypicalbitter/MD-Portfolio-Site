@@ -9,6 +9,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 ----------------------------------------------------------/* OVERALL */
 
 body {
@@ -195,20 +197,39 @@ section {
     justify-content: center;
     align-items: center;}
 
+    /* .aboutTitle {
+        font-size: 200px;
+        grid-column: 1 / span 1; 
+        font-weight: 300;
+        padding-left: 40px;
+    } */
+
     .aboutTitle {
         font-size: 200px;
         grid-column: 1 / span 1; /* Title takes up first column */
         font-weight: 300;
         padding-left: 40px;
-
+        letter-spacing: 0.5px; /* Initial letter spacing */
+        transition: letter-spacing 0.3s ease; /* Transition for smooth effect */
     }
+
+    .aboutTitle:hover {
+    letter-spacing: 5px; /* Increased letter spacing on hover */
+    }
+
+
     
     .paragraph {
-        grid-column: 2 / span 1; /* Paragraph takes up second column */
+        grid-column: 2 / span 1; 
+        font-family: "Open Sans", sans-serif;
+        padding-right: 30px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
     }
     
     .paragraph p {
         margin-top: 0; /* Remove top margin for first paragraph */
+        margin: 20px;
+
     }
 
 .section-pic-container{
@@ -280,9 +301,7 @@ p.section-text p2 {
     animation-delay: 0.5s; /* Delay the animation for 0.5 seconds */
 }
 
-.nametitle {
- /* Delay the animation for 1.5 seconds */
-}
+
 
 @keyframes fadeIn {
     from {

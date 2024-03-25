@@ -27,6 +27,7 @@ window.addEventListener('scroll', function() {
     var skillsSection = document.getElementById('skills');
     var projectsSection = document.getElementById('projects');
     
+    
     var sections = [aboutSection, skillsSection, projectsSection];
     
     sections.forEach(function(section) {
@@ -39,4 +40,6 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+
 
