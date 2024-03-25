@@ -400,9 +400,9 @@ color: white;
     margin: 30px;
     width: 150vh;
     height: auto;    
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5);
     border-radius: 4rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);  */
 }
 
 
@@ -540,13 +540,13 @@ article .icon:hover {
     position: relative;
 }
 
-.color-container {
+/* .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
-}
+} */
 
 .project-img {
-    border-radius: 2rem;
+    border-radius: 1500px;
     width: 90%;
     height: 90%;
 }
