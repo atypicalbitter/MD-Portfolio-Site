@@ -172,7 +172,7 @@ a:hover {
 ----------------------------------------------------------/* SECTIONS */
 
 section {
-    padding: 4vh;
+    padding: 5vh;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -336,6 +336,7 @@ p.section-text p2 {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+    margin-bottom: 100px;
 }
 
 .icon {
@@ -382,7 +383,7 @@ color: white;
 
 #about {
     position: relative;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .about-containers 
@@ -398,8 +399,8 @@ color: white;
     text-align: center;
     align-items: center;
     margin: 30px;
-    width: 150vh;
-    height: auto;    
+    width: 100vh;   
+    justify-content: space-between;
     /* background-color: rgba(255, 255, 255, 0.5);
     border-radius: 4rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);  */
@@ -536,9 +537,28 @@ article .icon:hover {
 }
 
 
+
 #projects {
     position: relative;
 }
+
+.title {
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping if the items exceed the container width */
+    gap: 20px; /* Adjust the gap between project containers */
+}
+
+.details-container {
+    flex: 1 1 25%; /* Adjust the width of each project container */
+    max-width: 25%; /* Limit the maximum width of each project container */
+}
+
 
 /* .color-container {
     border-color: rgb(163, 163, 163);
